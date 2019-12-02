@@ -1,0 +1,220 @@
+/*************general*****************/
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.5em;
+    color: #655A56;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 2 * 4vw); 
+}
+
+.container{
+    margin: 0 auto;
+    width: 35em;
+    background-color: #F9F5F3;
+}
+
+.bmi-section, .demand-calories-section, .display-section, .makronutrients-section, .list-section{
+    margin: 3em;
+    text-align: center;
+}
+
+.bmi-weight-input, .bmi-height-input, .sex-selection, .age-input, .activity-selection, .achievment-selection, .add-type, .add-description, .add-calories-value, 
+.add-carbohydrates-value, .add-proteins-value, .add-fats-value{
+    font-size: 0.8em;
+    width: 20em;
+}
+
+.bmi-submit-button, .demand-submit-button, .add-button{
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    margin: 0.4em;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bmi-submit-button:focus, .demand-submit-button:focus, .add-button:focus{
+    outline: none;
+}
+
+.right{
+    float: right;
+}
+
+
+
+/***********bmi section*********/
+.bmi-section{
+    padding: 3em 0 0 0;
+    
+}
+
+
+/************display section********/
+.calories-balance{
+    font-size: 2em;
+}
+
+.calories-display{
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 0.3em 1em;
+}
+
+.absorbed-calories-title, .burned-calories-title{
+    float: left;
+}
+
+.absorbed-calories-value, .burned-calories-value{
+    float: left;
+}
+
+
+.makronutrients-section{
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    margin: auto;
+    padding: 0.3em 1em;
+}
+
+.carbohydrates-title, .proteins-title, .fats-title{
+    float: left;
+}
+
+.carbohydrates-value, .proteins-value, .fats-value{
+    float: left;
+}
+
+
+/**********list section **********/
+.list-section{
+    clear: both;
+}
+
+
+
+/* *************** display list section ************ */
+
+.display-list-container{
+    margin: 3em 0 0 0;
+    padding: 0 0 5em 0;
+    overflow-y: auto;
+}
+
+.food {
+    float: left;
+    width: 50%;
+}
+
+.activity {
+    float: left;
+    width: 50%;
+}
+
+.item {
+    float: left;
+    width: 100%;
+}
+
+.item-description {
+    float: left;
+}
+
+.item-calories {
+    float: left;
+    padding: 0 0.5em 0 0;
+}
+
+.item-delete {
+    float: left;
+    padding: 0 0.5em 0 0;
+}
+
+.toRight {
+    float: right;
+}
+
+
+
+@media screen and (max-width: 680px){
+    
+    body{
+        background-color: #F48982;
+        background-image: none;
+        margin: 0;
+        font-weight: 300;
+        line-height: 1.6;
+        /* font-size: 2em; */
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .bmi-weight-input, .bmi-height-input, .sex-selection, .age-input, .activity-selection, .achievment-selection, .add-type, .add-description, .add-calories-value, 
+    .add-carbohydrates-value, .add-proteins-value, .add-fats-value{
+        width: 90%;
+        height: 2em;
+        font-size: 2em;
+    }
+
+    .bmi-result{
+        font-size: 1.7em;
+    }
+
+    .toRight{
+        float: none;
+    }
+    .carbohydrates, .proteins, .fats{
+        float: left;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+    }
+
+    .carbohydrates-title, .proteins-title, .fats-title{
+        float: left;
+    }
+
+    .carbohydrates-value, .proteins-value, .fats-value{
+        float: none;
+    }
+
+    .bmi-weight-title, .bmi-height-title, .sex-selection-title, .age-title, .achievment-selection-title, .food-title, .activity-title{
+        font-size: 3em;
+    }
+
+    .calories-balance{
+        font-size: 4em;
+    }
+
+    .calories-display, .makronutrients-section, .activity{
+        float: none;
+        width: 100%;
+    }
+
+    .makronutrients-section{
+        margin: 0.5em 0 0 0;
+    }
+
+    .absorbed-calories-title, .absorbed-calories-value, .burned-calories-title, .burned-calories-value, .carbohydrates-title, .carbohydrates-value, .proteins-title, .proteins-value, .fats-title, .fats-value{
+        font-size: 1.8em;
+    }
+
+    .bmi-submit-button, .demand-submit-button, .add-button {
+        font-size: 1.5em;
+    }
+
+    .item{
+        font-size: 2em;
+    }
+
+
+}
